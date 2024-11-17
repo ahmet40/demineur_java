@@ -9,6 +9,13 @@
             "name": "Executable",
             "request": "launch",
             "mainClass": "Executable",
+            "projectName": "baba_ahmet_demineur_8700ca1d"
+        },
+        {
+            "type": "java",
+            "name": "Executable",
+            "request": "launch",
+            "mainClass": "Executable",
             "projectName": "baba_ahmet_demineur_feca648e"
         },
         {
@@ -21,7 +28,7 @@
             "type": "java",
             "name": "Executable",
             "request": "launch",
-            "vmArgs": "--module-path /home/baba/Téléchargements/openjfx/lib/ --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path /c/Users/40ahm/Lib/openjfx/lib --add-modules javafx.controls,javafx.fxml",
             "mainClass": "Executable",
             "projectName": "fichiers projet 6-20230406_c36abce7"
         }

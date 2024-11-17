@@ -9,17 +9,27 @@ Ce projet à été realisé seul.
 
 # Pour fair la documetation du jeu, il faut faire la commande suivante:
 
-javadoc --module-path /usr/share/openjfx/lib/ --add-modules javafx.controls -d ./doc ./src/*.java
+javadoc --module-path  lien/vers/openjfx/lib  --add-modules javafx.controls -d ./doc ./src/*.java
 
 
 # Pour compiler et lancer le jeu, il faut faire les commandes suivantes:
 
-javac --module-path /usr/share/openjfx/lib/ --add-modules javafx.controls -d ./bin ./src/*.java
+javac --module-path lien/vers/openjfx/lib --add-modules javafx.controls -d ./bin ./src/*.java
 
-java --module-path /usr/share/openjfx/lib/ --add-modules javafx.controls -cp ./bin Executable
+java --module-path lien/vers/openjfx/lib--add-modules javafx.controls -cp ./bin Executable
 
+# problème pouvant être rencontrer
 
-Il y a eu un changement fait dans le diagramme de class, j'ai utilisé une liste de liste pour mettre mes caseIntelligentes dans le plateau.
-De plus j'ai fait une methode qui permet d'innonder les cases lorsque la case sur lequel on appuie a aucune bombe à proximiter.
+Si vous n'arriver pas à compiler le jeu, c'est que vous n'avez pas la librairie javafx, il faut donc la télécharger et mettre le lien vers la librairie dans le chemin du module.
 
+De plus il se pourrait que vous soyez amenez à changer le chemin du module dans les fichier launch.json et settings.json.
 
+- Dans le fichier setting.json, il faut changer le chemin du module dans la liste vous devez simplement changer le chemin du module.
+
+- Dans le fichier launch.json, il faut changer le chemin du module dans la liste vous devez simplement changer le chemin du module.
+
+exemple de chemin du module:
+ "vmArgs": "--module-path /test/openjfx/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "Executable",
+
+il faut changer le chemin /test/openjfx/lib par le chemin de votre librairie javafx.
